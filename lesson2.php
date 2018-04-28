@@ -44,7 +44,44 @@ $z = mul(2,7);
 echo $z . '<br>';
 
 
-
+/*  4. Реализовать функцию с тремя параметрами: function mathOperation($arg1, $arg2, $operation), где
+$arg1, $arg2 – значения аргументов, $operation – строка с названием операции. В зависимости от
+переданного значения операции выполнить одну из арифметических операций (использовать
+функции из пункта 3) и вернуть полученное значение (использовать switch).*/
+function sum($arg1,$arg2) {
+                return $sum = $arg1+$arg2;
+                }
+function div($arg1,$arg2) {
+                return $div = $arg1/$arg2;
+                }
+function sub($arg1,$arg2) {
+                return $sub = $arg1-$arg2;
+                }
+function mul($arg1,$arg2) {
+                return $mul = $arg1*$arg2;
+                }
+$operation = '';
+function mathOperation($arg1, $arg2, $operation) {
+    switch ($operation) {
+          case 'сложение';
+            echo sum($arg1,$arg2);
+            break;
+          case 'деление';
+            echo div($arg1,$arg2);
+            break;
+          case 'разность';
+            echo sub($arg1,$arg2);
+            break;
+          case 'умножение';
+            echo mul($arg1,$arg2);
+            break;
+          default;
+            echo 'что-то не так';
+            break;
+    }
+}
+$result = mathOperation(3, 3, 'сложение');
+echo $result;
 
 
 
