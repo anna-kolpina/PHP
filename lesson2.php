@@ -83,7 +83,9 @@ function mathOperation($arg1, $arg2, $operation) {
 $result = mathOperation(3, 3, 'сложение');
 echo $result;
 
-
+/*  5. Посмотреть на встроенные функции PHP. Используя имеющийся HTML шаблон, вывести
+текущий год в подвале при помощи встроенных функций PHP.*/
+echo date("d.m.y");
 
 
 
