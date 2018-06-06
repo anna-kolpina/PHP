@@ -74,7 +74,37 @@ function string($string) {
 }
 string('Mama go to home');
 
+/*6. В имеющемся шаблоне сайта заменить статичное меню (ul - li) на генерируемое через PHP.
+Необходимо представить пункты меню как элементы массива и вывести их циклом. Подумать,
+как можно реализовать меню с вложенными подменю? Попробовать его реализовать.*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <ul style="display: none;">
+      <li>main</li>
+      <li>about</li>
+      <li>contact</li>
+    </ul>
+      <?php
+        $menu = array('<li>main</li>',
+                      '<li>about</li>',
+                      '<li>contact</li>',
+                      );
+       $len_menu = count ($menu);
+        for ($i=0; $i < $len_menu; $i++) {
+          echo $menu[$i] . '<br>';
+        }
+      ?>
+  </body>
+</html>
 
+/*7. *Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. Выглядеть это
+должно так:
+for(…){// здесь пусто}*/
+for ($i=0; $i<10; print $i, $i++) {/*здесь пусто*/}
 
 
 
