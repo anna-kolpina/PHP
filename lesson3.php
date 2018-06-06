@@ -109,6 +109,12 @@ string('Mama go to home');
 for(…){// здесь пусто}*/
 for ($i=0; $i<10; print $i, $i++) {/*здесь пусто*/}
 
+/*8. 
+ДОДЕЛАТЬ                  
+*Повторить третье задание, но вывести на экран только города, начинающиеся с буквы «К».*/
+$city = array ("moscow", "zelenograd", "klin", "spb", "vsevologck",);
+$c = implode (", ",$city);
+echo $c . '.';
 
 
 
